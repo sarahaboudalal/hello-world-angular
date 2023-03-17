@@ -1,1 +1,11 @@
 <button [disabled]="clicked" (click)="handleClick()">Click Me!</button>
+<h2>{{title}}</h2>
+
+<div *ngFor="let person of persons">
+    <h3 [ngClass]="{
+        'red': person.name === 'Heba',
+        'blue': person.name === 'Sarah'
+    }">{{person.name}}</h3>
+    <p>{{person.age}}</p>
+    <p><strong>{{person.location}}</strong></p>
+</div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-app-home',
@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppHomeComponent {
   clicked = false;
+  title = `Angular ${VERSION.full} is ready!`;
+
+  persons = [
+    {
+      name: 'Sarah',
+      age: 24,
+      location: 'Lebanon',
+    },
+    {
+      name: 'Heba',
+      age: 36,
+      location: 'Lebanon',
+    },
+  ];
+
   handleClick() {
     this.clicked = true;
   }
