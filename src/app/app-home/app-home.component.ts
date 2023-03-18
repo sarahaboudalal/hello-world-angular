@@ -13,12 +13,12 @@ export class AppHomeComponent {
   persons = of([
     {
       name: 'Sarah',
-      age: 24,
+      year: 1999,
       location: 'Lebanon',
     },
     {
       name: 'Heba',
-      age: 36,
+      year: 1987,
       location: 'Lebanon',
     },
   ]);
