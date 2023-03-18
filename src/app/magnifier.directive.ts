@@ -10,4 +10,8 @@ export class MagnifierDirective {
   onHover() {
     this.width = 300;
   }
+  @HostListener('click', ['$event'])
+  onClick() {
+    this.width = 200;
+  }
 }
