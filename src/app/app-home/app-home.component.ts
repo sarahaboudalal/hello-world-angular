@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-app-home',
@@ -9,7 +10,7 @@ export class AppHomeComponent {
   clicked = false;
   title = `Angular ${VERSION.full} is ready!`;
 
-  persons = [
+  persons = of([
     {
       name: 'Sarah',
       age: 24,
@@ -20,7 +21,7 @@ export class AppHomeComponent {
       age: 36,
       location: 'Lebanon',
     },
-  ];
+  ]);
 
   handleClick() {
     this.clicked = true;
