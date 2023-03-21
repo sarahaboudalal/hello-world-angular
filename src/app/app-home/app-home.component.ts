@@ -24,6 +24,6 @@ export class AppHomeComponent {
   ]);
 
   handleClick() {
-    this.clicked = true;
+    this.clicked = !this.clicked;
   }
 }
